@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Device
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Device
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+  
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-192x192.png" sizes="192x192">
+    
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          
+          <div class="headerMenuContainer">
+            <div class="headerLogo"></div>
+            
+          </div>
+          
+          <div id="navbar">
+        </div></nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sideBackButton"></div>
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NextMind.Devices.Device">
+  
+  
+  <h1 id="NextMind_Devices_Device" data-uid="NextMind.Devices.Device" class="text-break">Class Device
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a single NextMind device.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="NextMind.Devices.Device.html">Device</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NextMind.Devices.html">NextMind.Devices</a></h6>
+  <h6><strong>Assembly</strong>: NextMind.dll</h6>
+  <h5 id="NextMind_Devices_Device_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Device : IEquatable&lt;Device&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="NextMind_Devices_Device_contactGradeEvent" data-uid="NextMind.Devices.Device.contactGradeEvent">contactGradeEvent</h4>
+  <div class="markdown level1 summary"><p>Events triggered when a new contact grade is available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactGradeEvent contactGradeEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.ContactGradeEvent.html">ContactGradeEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_Devices_Device_onConnectionStatusChanged" data-uid="NextMind.Devices.Device.onConnectionStatusChanged">onConnectionStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the Bluetooth connection status of this <a class="xref" href="NextMind.Devices.Device.html">Device</a> changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceConnectionStatusEvent onConnectionStatusChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceConnectionStatusEvent.html">DeviceConnectionStatusEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="NextMind_Devices_Device_ConnectionStatus_" data-uid="NextMind.Devices.Device.ConnectionStatus*"></a>
+  <h4 id="NextMind_Devices_Device_ConnectionStatus" data-uid="NextMind.Devices.Device.ConnectionStatus">ConnectionStatus</h4>
+  <div class="markdown level1 summary"><p>The status of this <a class="xref" href="NextMind.Devices.Device.html">Device</a> regarding its Bluetooth connection to the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionStatus ConnectionStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Devices.ConnectionStatus.html">ConnectionStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_ID_" data-uid="NextMind.Devices.Device.ID*"></a>
+  <h4 id="NextMind_Devices_Device_ID" data-uid="NextMind.Devices.Device.ID">ID</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="NextMind.Devices.Device.html">Device</a>'s ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>A unique identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_IsCalibrated_" data-uid="NextMind.Devices.Device.IsCalibrated*"></a>
+  <h4 id="NextMind_Devices_Device_IsCalibrated" data-uid="NextMind.Devices.Device.IsCalibrated">IsCalibrated</h4>
+  <div class="markdown level1 summary"><p>Has a user already performed a calibration using this device?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCalibrated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the device already obtained a calibration score. <code>false</code> otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Devices_Device_IsCalibrated_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property returns <code>false</code>, users will not be able to interact with <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s.</p>
+</div>
+  <a id="NextMind_Devices_Device_IsConnected_" data-uid="NextMind.Devices.Device.IsConnected*"></a>
+  <h4 id="NextMind_Devices_Device_IsConnected" data-uid="NextMind.Devices.Device.IsConnected">IsConnected</h4>
+  <div class="markdown level1 summary"><p>Is this <a class="xref" href="NextMind.Devices.Device.html">Device</a> currently connected?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the device is connected, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_Name_" data-uid="NextMind.Devices.Device.Name*"></a>
+  <h4 id="NextMind_Devices_Device_Name" data-uid="NextMind.Devices.Device.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="NextMind.Devices.Device.html">Device</a>'s name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name from the Bluetooth inteface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_Paired_" data-uid="NextMind.Devices.Device.Paired*"></a>
+  <h4 id="NextMind_Devices_Device_Paired" data-uid="NextMind.Devices.Device.Paired">Paired</h4>
+  <div class="markdown level1 summary"><p>Is this <a class="xref" href="NextMind.Devices.Device.html">Device</a> paired?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Paired { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the device is paired.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="NextMind_Devices_Device_Equals_" data-uid="NextMind.Devices.Device.Equals*"></a>
+  <h4 id="NextMind_Devices_Device_Equals_NextMind_Devices_Device_" data-uid="NextMind.Devices.Device.Equals(NextMind.Devices.Device)">Equals(Device)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Device other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Devices.Device.html">Device</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetAverageContactQuality_" data-uid="NextMind.Devices.Device.GetAverageContactQuality*"></a>
+  <h4 id="NextMind_Devices_Device_GetAverageContactQuality" data-uid="NextMind.Devices.Device.GetAverageContactQuality">GetAverageContactQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the average electrodes' contact quality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetAverageContactQuality is deprecated, please call GetContactGrade, GetNormalizedContactGrade or connect to contactGradeEvent instead.&quot;)]
+public Device.ContactQuality GetAverageContactQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Devices.Device.ContactQuality.html">Device.ContactQuality</a></td>
+        <td><p>The average contact quality</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetBatteryLevel_" data-uid="NextMind.Devices.Device.GetBatteryLevel*"></a>
+  <h4 id="NextMind_Devices_Device_GetBatteryLevel" data-uid="NextMind.Devices.Device.GetBatteryLevel">GetBatteryLevel()</h4>
+  <div class="markdown level1 summary"><p>Get the battery level (in %) for this device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetBatteryLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>A value between <code>0</code> and <code>100</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetCalibrationResults_" data-uid="NextMind.Devices.Device.GetCalibrationResults*"></a>
+  <h4 id="NextMind_Devices_Device_GetCalibrationResults" data-uid="NextMind.Devices.Device.GetCalibrationResults">GetCalibrationResults()</h4>
+  <div class="markdown level1 summary"><p>Get the last calibration results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationResults GetCalibrationResults()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Calibration.CalibrationResults.html">CalibrationResults</a></td>
+        <td><p>The last calibration results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetContact_" data-uid="NextMind.Devices.Device.GetContact*"></a>
+  <h4 id="NextMind_Devices_Device_GetContact_System_UInt32_" data-uid="NextMind.Devices.Device.GetContact(System.UInt32)">GetContact(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Get the contact quality of the given electrode for this <a class="xref" href="NextMind.Devices.Device.html">Device</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetContact(uint electrodeID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">electrodeID</span></td>
+        <td><p>The electrode identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>A value between:</p>
+<ul><li><code>0</code>:absence of contact</li><li><code>1</code>:perfect contact</li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetContactGrade_" data-uid="NextMind.Devices.Device.GetContactGrade*"></a>
+  <h4 id="NextMind_Devices_Device_GetContactGrade" data-uid="NextMind.Devices.Device.GetContactGrade">GetContactGrade()</h4>
+  <div class="markdown level1 summary"><p>Returns the current contact grade.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactEvent.Type GetContactGrade()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NextMind.Core.Event.ContactEvent.Type</span></td>
+        <td><p>The current contact grade</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetHashCode_" data-uid="NextMind.Devices.Device.GetHashCode*"></a>
+  <h4 id="NextMind_Devices_Device_GetHashCode" data-uid="NextMind.Devices.Device.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get the hash code of this <a class="xref" href="NextMind.Devices.Device.html">Device</a> from its <a class="xref" href="NextMind.Devices.Device.html#NextMind_Devices_Device_ID">ID</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <a id="NextMind_Devices_Device_GetNormalizedContactGrade_" data-uid="NextMind.Devices.Device.GetNormalizedContactGrade*"></a>
+  <h4 id="NextMind_Devices_Device_GetNormalizedContactGrade" data-uid="NextMind.Devices.Device.GetNormalizedContactGrade">GetNormalizedContactGrade()</h4>
+  <div class="markdown level1 summary"><p>Returns the current contact grade value normalized between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetNormalizedContactGrade()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The current contact grade</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_GetTrackingResults_" data-uid="NextMind.Devices.Device.GetTrackingResults*"></a>
+  <h4 id="NextMind_Devices_Device_GetTrackingResults_NextMind_NeuroTags_NeuroTag_" data-uid="NextMind.Devices.Device.GetTrackingResults(NextMind.NeuroTags.NeuroTag)">GetTrackingResults(NeuroTag)</h4>
+  <div class="markdown level1 summary"><p>Get the tracking values (confidence, hit) of this <a class="xref" href="NextMind.Devices.Device.html">Device</a> tracking the given <code data-dev-comment-type="paramref" class="paramref">neuroTag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackingResults GetTrackingResults(NeuroTag neuroTag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a></td>
+        <td><span class="parametername">neuroTag</span></td>
+        <td><p>The <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.TrackingResults.html">TrackingResults</a></td>
+        <td><ul><li>If the <code data-dev-comment-type="paramref" class="paramref">neuroTag</code> is not registered:<code>0</code> - <code>false</code></li><li>If the <code data-dev-comment-type="paramref" class="paramref">neuroTag</code> is registered:<code>[0-1]</code> - [<code>true</code> or <code>false</code>]</li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_IsCalibrating_" data-uid="NextMind.Devices.Device.IsCalibrating*"></a>
+  <h4 id="NextMind_Devices_Device_IsCalibrating" data-uid="NextMind.Devices.Device.IsCalibrating">IsCalibrating()</h4>
+  <div class="markdown level1 summary"><p>Is this device currently calibrating?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCalibrating()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a calibration is running, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Devices_Device_ToString_" data-uid="NextMind.Devices.Device.ToString*"></a>
+  <h4 id="NextMind_Devices_Device_ToString" data-uid="NextMind.Devices.Device.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nmfooter"> </div>    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </div></body>
+</html>

@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TagCalibrationBehaviour
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TagCalibrationBehaviour
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+  
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-192x192.png" sizes="192x192">
+    
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          
+          <div class="headerMenuContainer">
+            <div class="headerLogo"></div>
+            
+          </div>
+          
+          <div id="navbar">
+        </div></nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sideBackButton"></div>
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NextMind.Calibration.TagCalibrationBehaviour">
+  
+  
+  <h1 id="NextMind_Calibration_TagCalibrationBehaviour" data-uid="NextMind.Calibration.TagCalibrationBehaviour" class="text-break">Class TagCalibrationBehaviour
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a> is the base class from which you must inherit to define the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>'s behaviour during calibration.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NextMind.Calibration.html">NextMind.Calibration</a></h6>
+  <h6><strong>Assembly</strong>: NextMind.dll</h6>
+  <h5 id="NextMind_Calibration_TagCalibrationBehaviour_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TagCalibrationBehaviour</code></pre>
+  </div>
+  <h5 id="NextMind_Calibration_TagCalibrationBehaviour_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This is the way to override the behaviour of the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s by script, but you can still use directlty the events in the editor.</p>
+<p>
+NextMind is bringing a default behaviour (<span class="xref">NextMind.Calibration.DefaultTagCalibrationBehaviour</span>), scaling the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s up and down during calibration, 
+but you may want to implement a different one.
+In this case, your custom <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> behaviour classes must inherit from this one and implement <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnInitialize_NextMind_NeuroTags_NeuroTag_">OnInitialize(NeuroTag)</a>, <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnStartCalibrating_NextMind_NeuroTags_NeuroTag_">OnStartCalibrating(NeuroTag)</a> and <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnEndCalibrating_NextMind_NeuroTags_NeuroTag_">OnEndCalibrating(NeuroTag)</a>.
+</p>
+<p>
+Please refer to the &quot;Create custom NeuroTags calibration behaviours&quot; for further information.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="NextMind_Calibration_TagCalibrationBehaviour__ctor_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.#ctor*"></a>
+  <h4 id="NextMind_Calibration_TagCalibrationBehaviour__ctor" data-uid="NextMind.Calibration.TagCalibrationBehaviour.#ctor">TagCalibrationBehaviour()</h4>
+  <div class="markdown level1 summary"><p>Constructor for this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TagCalibrationBehaviour()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="NextMind_Calibration_TagCalibrationBehaviour_OnEndCalibrating_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnEndCalibrating*"></a>
+  <h4 id="NextMind_Calibration_TagCalibrationBehaviour_OnEndCalibrating_NextMind_NeuroTags_NeuroTag_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnEndCalibrating(NextMind.NeuroTags.NeuroTag)">OnEndCalibrating(NeuroTag)</h4>
+  <div class="markdown level1 summary"><p>Triggered when the <code data-dev-comment-type="paramref" class="paramref">tag</code> stops being used by the calibration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerator OnEndCalibrating(NeuroTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The NeuroTag used during the trial which just ends.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_TagCalibrationBehaviour_OnInitialize_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnInitialize*"></a>
+  <h4 id="NextMind_Calibration_TagCalibrationBehaviour_OnInitialize_NextMind_NeuroTags_NeuroTag_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnInitialize(NextMind.NeuroTags.NeuroTag)">OnInitialize(NeuroTag)</h4>
+  <div class="markdown level1 summary"><p>Triggered just before the beginning of the calibration. Can be used to setup your NeuroTags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnInitialize(NeuroTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The NeuroTag initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_TagCalibrationBehaviour_OnStartCalibrating_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnStartCalibrating*"></a>
+  <h4 id="NextMind_Calibration_TagCalibrationBehaviour_OnStartCalibrating_NextMind_NeuroTags_NeuroTag_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.OnStartCalibrating(NextMind.NeuroTags.NeuroTag)">OnStartCalibrating(NeuroTag)</h4>
+  <div class="markdown level1 summary"><p>Triggered when the <code data-dev-comment-type="paramref" class="paramref">tag</code> becomes the one use by the calibration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerator OnStartCalibrating(NeuroTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The NeuroTag used during the trial about to start.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_TagCalibrationBehaviour_SetCalibrationManager_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.SetCalibrationManager*"></a>
+  <h4 id="NextMind_Calibration_TagCalibrationBehaviour_SetCalibrationManager_NextMind_Calibration_CalibrationManager_" data-uid="NextMind.Calibration.TagCalibrationBehaviour.SetCalibrationManager(NextMind.Calibration.CalibrationManager)">SetCalibrationManager(CalibrationManager)</h4>
+  <div class="markdown level1 summary"><p>Set the CalibrationManager used by this behaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCalibrationManager(CalibrationManager newManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a></td>
+        <td><span class="parametername">newManager</span></td>
+        <td><p>The CalibrationManager to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Calibration_TagCalibrationBehaviour_SetCalibrationManager_NextMind_Calibration_CalibrationManager__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An instance of the CalibrationManager is automatically retrieved by <code>Object.FindObjectOfType&lt;CalibrationManager&gt;()</code> in the constructor of this class but you can still set the instance you want using this function. It may be useful if you are using multiple CalibrationManagers in your scene.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nmfooter"> </div>    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </div></body>
+</html>

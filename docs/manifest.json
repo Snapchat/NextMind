@@ -1,0 +1,792 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Development/UnityPlugin/Documentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.CalibrationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.CalibrationManager.html",
+          "hash": "5oKqkAGqLE9V7mEgxNS0JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.CalibrationResults.CalibrationGrade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.CalibrationResults.CalibrationGrade.html",
+          "hash": "RLgz2BjnmBpt2aq8ZNDqmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.CalibrationResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.CalibrationResults.html",
+          "hash": "NRx3+R303WG9iRFHaLzuqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.html",
+          "hash": "Y+1nh+O+8QydU876zApvlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.TagCalibrationBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.TagCalibrationBehaviour.html",
+          "hash": "WbAOjR36ufFkJ+T0s7t0Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Calibration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Calibration.html",
+          "hash": "HsNtduU7gjxYnare6h21dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.ConnectedDeviceStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.ConnectedDeviceStatus.html",
+          "hash": "mIGpogVIJfDmZWkP7CJdpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.ConnectionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.ConnectionStatus.html",
+          "hash": "vHIbs+94Wkkg7QfsF60A9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.ContactsVisualization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.ContactsVisualization.html",
+          "hash": "kibvCSu66nNEn9unk7OOrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.Device.ContactQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.Device.ContactQuality.html",
+          "hash": "6a+m6anUuLlPiolPdsBf1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.Device.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.Device.html",
+          "hash": "CwNjrqm7+A2/Qipar6KPbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Devices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Devices.html",
+          "hash": "zCZh86fahmcqzuVH1e2S6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.CalibrationErrorEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.CalibrationErrorEvent.html",
+          "hash": "J5IzsOY2FKz70pezkG2LCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.CalibrationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.CalibrationEvent.html",
+          "hash": "jKPrWdYlQiJv6J6ZQBY58A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.CalibrationNeuroTagEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.CalibrationNeuroTagEvent.html",
+          "hash": "g55kqJqanOjS1NcfbYkwNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.CalibrationResultsErrorEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.CalibrationResultsErrorEvent.html",
+          "hash": "lWgXwY4jLxD3pAWsnQGwUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.CalibrationResultsEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.CalibrationResultsEvent.html",
+          "hash": "WO5ynLXEKR3SSKrr5Fn2/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.ContactGradeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.ContactGradeEvent.html",
+          "hash": "bya3pE8lSJcupvs/hhWVNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.DeviceConnectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.DeviceConnectionEvent.html",
+          "hash": "j0zyYv3+s1vIQVTVoDPm+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.DeviceConnectionStatusEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.DeviceConnectionStatusEvent.html",
+          "hash": "A4IcSrB8mjjKSOn6AF/JZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.DeviceEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.DeviceEvent.html",
+          "hash": "1YdOsZmyBvVjQnwywqRc3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.GlobalStatusEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.GlobalStatusEvent.html",
+          "hash": "ofqrTECVtZF5CLAxOJ/6DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.NeuroTagConfidenceEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.NeuroTagConfidenceEvent.html",
+          "hash": "kSAhX1SzWeHSQpaE/+neRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.NeuroTagEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.NeuroTagEvent.html",
+          "hash": "KGQKZIJ0/MRt6xl5liZHGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.NeuroTagStimulationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.NeuroTagStimulationEvent.html",
+          "hash": "9QtWyPnabA+Wc8t8Nlb1qQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.ScanFinishedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.ScanFinishedEvent.html",
+          "hash": "vZwi7oXHU5efQaTA+L9DOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.ScanningEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.ScanningEvent.html",
+          "hash": "RwuwqRggh3ceOJG+C70StQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Events.html",
+          "hash": "KGLgfu4zQKj08Zzp9J2yVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroManager.ScanBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroManager.ScanBehaviour.html",
+          "hash": "K9I6MWL0NqoW85XVQzSRRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroManager.html",
+          "hash": "+zF6THucUivhCHz4NmC42Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.NeuroTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.NeuroTag.html",
+          "hash": "VrYS0lvAJ0F/ybfBxUmsEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.NeuroTagFeedback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.NeuroTagFeedback.html",
+          "hash": "xuFDS9xOYaqO45SLHhTLRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.Stimulation.StimulationBehaviour.BehaviourType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.Stimulation.StimulationBehaviour.BehaviourType.html",
+          "hash": "Z88gDYNBa+3qkIdGflOfhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.Stimulation.StimulationBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.Stimulation.StimulationBehaviour.html",
+          "hash": "haPqu98BGeHbMWp+WTmgKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.Stimulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.Stimulation.html",
+          "hash": "gaeiprNtzA5HnYg+hywfhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.TrackingResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.TrackingResults.html",
+          "hash": "jAoG4C8qF6Mru+K0HfkyIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.NeuroTags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.NeuroTags.html",
+          "hash": "gpvZrP0gPIIGAqxE5ZNg8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.ScanningState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.ScanningState.html",
+          "hash": "89nzQJtnMrmhDVspTXbUqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Utility.AutoRotate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Utility.AutoRotate.html",
+          "hash": "4Suo1jnUZ8EoI9Hsvitgsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Utility.Billboard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Utility.Billboard.html",
+          "hash": "kqAGgUxiNPwCdrXLILTERQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Utility.ConstantPhysicalSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Utility.ConstantPhysicalSize.html",
+          "hash": "gLGGMtuBk1TGFl47bq2qiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.Utility.html",
+          "hash": "2sEhK8hJ23a662RPBWASlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NextMind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NextMind.html",
+          "hash": "xAgBt2K2K0AO3hN3Dd/Hng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "IM+EHkQyPtvRKFu1Gkep2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Wc4hsqpj/8t1hhXAm3oS7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "ssRmflH45lyUi9pTrsn8ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Image_needed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Image_needed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/UserGuide-4a.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/UserGuide-4a.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/UserGuide-4b.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/UserGuide-4b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/UserGuide-4c.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/UserGuide-4c.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/UserGuide-4d.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/UserGuide-4d.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/UserGuide-4e.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/UserGuide-4e.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cropped-nextFaviconbLACKTransp@2x-192x192.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cropped-nextFaviconbLACKTransp@2x-192x192.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cropped-nextFaviconbLACKTransp@2x-32x32.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cropped-nextFaviconbLACKTransp@2x-32x32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/light/UserGuide-4a.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/light/UserGuide-4a.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/light/UserGuide-4b.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/light/UserGuide-4b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/light/UserGuide-4c.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/light/UserGuide-4c.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/light/UserGuide-4d.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/light/UserGuide-4d.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/light/UserGuide-4e.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/light/UserGuide-4e.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "gejusFd7/80j2gN+BxxAjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "EIhwD2+o19OxxQFCB6JJTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 43,
+          "skipped_file_count": 17
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+﻿https://snapchat.github.io/NextMind/api/

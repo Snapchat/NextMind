@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CalibrationManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CalibrationManager
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+  
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-192x192.png" sizes="192x192">
+    
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          
+          <div class="headerMenuContainer">
+            <div class="headerLogo"></div>
+            
+          </div>
+          
+          <div id="navbar">
+        </div></nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sideBackButton"></div>
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NextMind.Calibration.CalibrationManager">
+  
+  
+  <h1 id="NextMind_Calibration_CalibrationManager" data-uid="NextMind.Calibration.CalibrationManager" class="text-break">Class CalibrationManager
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a> is the manager handling the whole calibration process.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NextMind.Calibration.html">NextMind.Calibration</a></h6>
+  <h6><strong>Assembly</strong>: NextMind.dll</h6>
+  <h5 id="NextMind_Calibration_CalibrationManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;NextMind/CalibrationManager&quot;)]
+public class CalibrationManager : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="NextMind_Calibration_CalibrationManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Here is the process in a simplified way after calling <a class="xref" href="NextMind.Calibration.CalibrationManager.html#NextMind_Calibration_CalibrationManager_StartCalibration">StartCalibration()</a>:</p>
+<ul><li>Prepare the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s by calling <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnInitialize_NextMind_NeuroTags_NeuroTag_">OnInitialize(NeuroTag)</a></li><li>Run 12 times the following process, with each time a different <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>
+<ul><li>Call <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnStartCalibrating_NextMind_NeuroTags_NeuroTag_">OnStartCalibrating(NeuroTag)</a></li><li>Wait 3 seconds</li><li>Call <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnEndCalibrating_NextMind_NeuroTags_NeuroTag_">OnEndCalibrating(NeuroTag)</a></li></ul></li><li>Stop the calibration, harvest and send the <a class="xref" href="NextMind.Calibration.CalibrationResults.html">CalibrationResults</a></li></ul>
+<p>
+This process has a static part that you cannot change. This static part is mainly about the trials (i.e. the presentation of a <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>) management:
+<ul><li>the trials number</li><li>the trials duration</li><li>the time between trials</li></ul>
+</p>
+<p>
+The customizable part is the way the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s will be shown and hidden to the user. You have two ways to do it:
+<ul><li>By settings the UnityEvent on the <a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a> component in the Unity Editor</li><li>Through script, by inheriting from the <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a> and implementing the mandatory functions: <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnInitialize_NextMind_NeuroTags_NeuroTag_">OnInitialize(NeuroTag)</a>, <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnStartCalibrating_NextMind_NeuroTags_NeuroTag_">OnStartCalibrating(NeuroTag)</a> and <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html#NextMind_Calibration_TagCalibrationBehaviour_OnEndCalibrating_NextMind_NeuroTags_NeuroTag_">OnEndCalibrating(NeuroTag)</a></li></ul>
+</p>
+Please refer to the &quot;Create custom NeuroTags calibration behaviours&quot; for further information about calibration customization.
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="NextMind_Calibration_CalibrationManager_onCalibrationError" data-uid="NextMind.Calibration.CalibrationManager.onCalibrationError">onCalibrationError</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the calibration ended with errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationErrorEvent onCalibrationError</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationErrorEvent.html">CalibrationErrorEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_Calibration_CalibrationManager_onCalibrationOver" data-uid="NextMind.Calibration.CalibrationManager.onCalibrationOver">onCalibrationOver</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the calibration is done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationEvent onCalibrationOver</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationEvent.html">CalibrationEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_Calibration_CalibrationManager_onCalibrationResultsAvailable" data-uid="NextMind.Calibration.CalibrationManager.onCalibrationResultsAvailable">onCalibrationResultsAvailable</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the <a class="xref" href="NextMind.Calibration.CalibrationResults.html">CalibrationResults</a> are available after a calibration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationResultsEvent onCalibrationResultsAvailable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationResultsEvent.html">CalibrationResultsEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_Calibration_CalibrationManager_onCalibrationResultsError" data-uid="NextMind.Calibration.CalibrationManager.onCalibrationResultsError">onCalibrationResultsError</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the manager did not managed to get the <a class="xref" href="NextMind.Calibration.CalibrationResults.html">CalibrationResults</a> successfuly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationResultsErrorEvent onCalibrationResultsError</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationResultsErrorEvent.html">CalibrationResultsErrorEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_Calibration_CalibrationManager_onNeuroTagGetCalibrationFocus" data-uid="NextMind.Calibration.CalibrationManager.onNeuroTagGetCalibrationFocus">onNeuroTagGetCalibrationFocus</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the <a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a> starts using a <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationNeuroTagEvent onNeuroTagGetCalibrationFocus</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationNeuroTagEvent.html">CalibrationNeuroTagEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Calibration_CalibrationManager_onNeuroTagGetCalibrationFocus_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is visible in the editor (and thus will be triggered) only if you choose <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.html#NextMind_Calibration_TagCalibrationBehaviour_BehaviourType_Custom">Custom</a> as <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a> value.</p>
+</div>
+  <h4 id="NextMind_Calibration_CalibrationManager_onNeuroTagInitForCalibration" data-uid="NextMind.Calibration.CalibrationManager.onNeuroTagInitForCalibration">onNeuroTagInitForCalibration</h4>
+  <div class="markdown level1 summary"><p>Event triggered before the actual start of a calibration, on each <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> used for the calibration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationNeuroTagEvent onNeuroTagInitForCalibration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationNeuroTagEvent.html">CalibrationNeuroTagEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Calibration_CalibrationManager_onNeuroTagInitForCalibration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is visible in the editor (and thus will be triggered) only if you choose <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.html#NextMind_Calibration_TagCalibrationBehaviour_BehaviourType_Custom">Custom</a> as <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a> value.</p>
+</div>
+  <h4 id="NextMind_Calibration_CalibrationManager_onNeuroTagLoseCalibrationFocus" data-uid="NextMind.Calibration.CalibrationManager.onNeuroTagLoseCalibrationFocus">onNeuroTagLoseCalibrationFocus</h4>
+  <div class="markdown level1 summary"><p>Event triggered when the <a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a> stops using a <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationNeuroTagEvent onNeuroTagLoseCalibrationFocus</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.CalibrationNeuroTagEvent.html">CalibrationNeuroTagEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Calibration_CalibrationManager_onNeuroTagLoseCalibrationFocus_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is visible in the editor (and thus will be triggered) only if you choose <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.html#NextMind_Calibration_TagCalibrationBehaviour_BehaviourType_Custom">Custom</a> as <a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a> value.</p>
+</div>
+  <h4 id="NextMind_Calibration_CalibrationManager_tagCalibrationBehaviourType" data-uid="NextMind.Calibration.CalibrationManager.tagCalibrationBehaviourType">tagCalibrationBehaviourType</h4>
+  <div class="markdown level1 summary"><p>The type of behaviour that the user chose to use on <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> during calibration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TagCalibrationBehaviour.BehaviourType tagCalibrationBehaviourType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.BehaviourType.html">TagCalibrationBehaviour.BehaviourType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="NextMind_Calibration_CalibrationManager_CalibrationResultsAvailable_" data-uid="NextMind.Calibration.CalibrationManager.CalibrationResultsAvailable*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_CalibrationResultsAvailable" data-uid="NextMind.Calibration.CalibrationManager.CalibrationResultsAvailable">CalibrationResultsAvailable</h4>
+  <div class="markdown level1 summary"><p>Did the <a class="xref" href="NextMind.Calibration.CalibrationManager.html">CalibrationManager</a> already got the <a class="xref" href="NextMind.Calibration.CalibrationResults.html">CalibrationResults</a> since the last call of <a class="xref" href="NextMind.Calibration.CalibrationManager.html#NextMind_Calibration_CalibrationManager_StartCalibration">StartCalibration()</a> ?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CalibrationResultsAvailable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_CalibrationManager_IsCalibrating_" data-uid="NextMind.Calibration.CalibrationManager.IsCalibrating*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_IsCalibrating" data-uid="NextMind.Calibration.CalibrationManager.IsCalibrating">IsCalibrating</h4>
+  <div class="markdown level1 summary"><p>Is the system currently running a calibration?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCalibrating { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the system is running a calibration, <code>false</code> otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_Calibration_CalibrationManager_IsCalibrating_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It may be a few frames delay between the call to <a class="xref" href="NextMind.Calibration.CalibrationManager.html#NextMind_Calibration_CalibrationManager_StartCalibration">StartCalibration()</a> and this property to return <code>true</code>.</p>
+</div>
+  <a id="NextMind_Calibration_CalibrationManager_NonControlDurationBeginning_" data-uid="NextMind.Calibration.CalibrationManager.NonControlDurationBeginning*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_NonControlDurationBeginning" data-uid="NextMind.Calibration.CalibrationManager.NonControlDurationBeginning">NonControlDurationBeginning</h4>
+  <div class="markdown level1 summary"><p>The time of the non control trial at the beginning of the calibration in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NonControlDurationBeginning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_CalibrationManager_NonControlDurationEnd_" data-uid="NextMind.Calibration.CalibrationManager.NonControlDurationEnd*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_NonControlDurationEnd" data-uid="NextMind.Calibration.CalibrationManager.NonControlDurationEnd">NonControlDurationEnd</h4>
+  <div class="markdown level1 summary"><p>The time of the non control trial at the end of the calibration in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NonControlDurationEnd { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_CalibrationManager_NumberOfTrials_" data-uid="NextMind.Calibration.CalibrationManager.NumberOfTrials*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_NumberOfTrials" data-uid="NextMind.Calibration.CalibrationManager.NumberOfTrials">NumberOfTrials</h4>
+  <div class="markdown level1 summary"><p>The number of NeuroTags supervisions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfTrials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_CalibrationManager_TrialDuration_" data-uid="NextMind.Calibration.CalibrationManager.TrialDuration*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_TrialDuration" data-uid="NextMind.Calibration.CalibrationManager.TrialDuration">TrialDuration</h4>
+  <div class="markdown level1 summary"><p>The time of supervision of a NeuroTag in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TrialDuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="NextMind_Calibration_CalibrationManager_SetNeuroTagBehaviour_" data-uid="NextMind.Calibration.CalibrationManager.SetNeuroTagBehaviour*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_SetNeuroTagBehaviour_NextMind_Calibration_TagCalibrationBehaviour_" data-uid="NextMind.Calibration.CalibrationManager.SetNeuroTagBehaviour(NextMind.Calibration.TagCalibrationBehaviour)">SetNeuroTagBehaviour(TagCalibrationBehaviour)</h4>
+  <div class="markdown level1 summary"><p>Set a new behaviour to use on the NeuroTags during calibration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNeuroTagBehaviour(TagCalibrationBehaviour behaviour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Calibration.TagCalibrationBehaviour.html">TagCalibrationBehaviour</a></td>
+        <td><span class="parametername">behaviour</span></td>
+        <td><p>The new behaviour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_Calibration_CalibrationManager_StartCalibration_" data-uid="NextMind.Calibration.CalibrationManager.StartCalibration*"></a>
+  <h4 id="NextMind_Calibration_CalibrationManager_StartCalibration" data-uid="NextMind.Calibration.CalibrationManager.StartCalibration">StartCalibration()</h4>
+  <div class="markdown level1 summary"><p>Start the calibration if the system's status allows it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartCalibration()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nmfooter"> </div>    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </div></body>
+</html>

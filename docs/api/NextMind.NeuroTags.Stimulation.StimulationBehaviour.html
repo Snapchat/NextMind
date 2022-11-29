@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StimulationBehaviour
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StimulationBehaviour
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+  
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-192x192.png" sizes="192x192">
+    
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          
+          <div class="headerMenuContainer">
+            <div class="headerLogo"></div>
+            
+          </div>
+          
+          <div id="navbar">
+        </div></nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sideBackButton"></div>
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour">
+  
+  
+  <h1 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour" class="text-break">Class StimulationBehaviour
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="NextMind.NeuroTags.Stimulation.StimulationBehaviour.html">StimulationBehaviour</a> is the base class from which you must inherit in order to define the way a <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> should behave to a stimulation update.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NextMind.NeuroTags.Stimulation.html">NextMind.NeuroTags.Stimulation</a></h6>
+  <h6><strong>Assembly</strong>: NextMind.dll</h6>
+  <h5 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StimulationBehaviour : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="NextMind_NeuroTags_Stimulation_StimulationBehaviour__ctor_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.#ctor*"></a>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour__ctor_NextMind_NeuroTags_NeuroTag_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.#ctor(NextMind.NeuroTags.NeuroTag)">StimulationBehaviour(NeuroTag)</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StimulationBehaviour(NeuroTag neuroTag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a></td>
+        <td><span class="parametername">neuroTag</span></td>
+        <td><p>The tag on which applies the behaviour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_shadersNames" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.shadersNames">shadersNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] shadersNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_targetMaterials" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.targetMaterials">targetMaterials</h4>
+  <div class="markdown level1 summary"><p>The materials used by the <span class="xref">NextMind.NeuroTags.Stimulation.StimulationBehaviour.neuroTag</span>'s stimulation renderers, which are using the NextMind's shaders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Material[] targetMaterials</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_Dispose_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.Dispose*"></a>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_Dispose" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_GetShaderNames_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.GetShaderNames*"></a>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_GetShaderNames" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.GetShaderNames">GetShaderNames()</h4>
+  <div class="markdown level1 summary"><p>Return the names of the shaders used by this behaviour instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string[] GetShaderNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>A list of shader names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_UpdateStimulation_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.UpdateStimulation*"></a>
+  <h4 id="NextMind_NeuroTags_Stimulation_StimulationBehaviour_UpdateStimulation_UnityEngine_GameObject_System_Single_" data-uid="NextMind.NeuroTags.Stimulation.StimulationBehaviour.UpdateStimulation(UnityEngine.GameObject,System.Single)">UpdateStimulation(GameObject, Single)</h4>
+  <div class="markdown level1 summary"><p>Called by the decoding system as soon as a new state of the stimulation is needed for the given <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>.
+In case of a custom <a class="xref" href="NextMind.NeuroTags.Stimulation.StimulationBehaviour.BehaviourType.html">StimulationBehaviour.BehaviourType</a>, this function has to be overriden with your own stimulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void UpdateStimulation(GameObject target, float stimulationValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The target affected by the stimulation update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">stimulationValue</span></td>
+        <td><p>The stimulation value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nmfooter"> </div>    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </div></body>
+</html>

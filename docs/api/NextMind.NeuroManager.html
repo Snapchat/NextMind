@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NeuroManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NeuroManager
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+  
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/cropped-nextFaviconbLACKTransp@2x-192x192.png" sizes="192x192">
+    
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          
+          <div class="headerMenuContainer">
+            <div class="headerLogo"></div>
+            
+          </div>
+          
+          <div id="navbar">
+        </div></nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sideBackButton"></div>
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NextMind.NeuroManager">
+  
+  
+  <h1 id="NextMind_NeuroManager" data-uid="NextMind.NeuroManager" class="text-break">Class NeuroManager
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a> is the main component of your scene, managing all the aspects of the NextMind system from the <a class="xref" href="NextMind.Devices.Device.html">Device</a> Bluetooth connection to <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> interaction.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NextMind.html">NextMind</a></h6>
+  <h6><strong>Assembly</strong>: NextMind.dll</h6>
+  <h5 id="NextMind_NeuroManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;NextMind/NeuroManager&quot;)]
+[DisallowMultipleComponent]
+public class NeuroManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="NextMind_NeuroManager_additionalTrackingCameras" data-uid="NextMind.NeuroManager.additionalTrackingCameras">additionalTrackingCameras</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera[] additionalTrackingCameras</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onDeviceAvailable" data-uid="NextMind.NeuroManager.onDeviceAvailable">onDeviceAvailable</h4>
+  <div class="markdown level1 summary"><p>Event triggered when an device becomes available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceConnectionEvent onDeviceAvailable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceConnectionEvent.html">DeviceConnectionEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onDeviceConnected" data-uid="NextMind.NeuroManager.onDeviceConnected">onDeviceConnected</h4>
+  <div class="markdown level1 summary"><p>Event triggered when an device becomes connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceConnectionEvent onDeviceConnected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceConnectionEvent.html">DeviceConnectionEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onDeviceDisconnected" data-uid="NextMind.NeuroManager.onDeviceDisconnected">onDeviceDisconnected</h4>
+  <div class="markdown level1 summary"><p>Event triggered when an device becomes disconnected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceConnectionEvent onDeviceDisconnected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceConnectionEvent.html">DeviceConnectionEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onDeviceEvent" data-uid="NextMind.NeuroManager.onDeviceEvent">onDeviceEvent</h4>
+  <div class="markdown level1 summary"><p>Event triggered when there is an error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceEvent onDeviceEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceEvent.html">DeviceEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onDeviceUnavailable" data-uid="NextMind.NeuroManager.onDeviceUnavailable">onDeviceUnavailable</h4>
+  <div class="markdown level1 summary"><p>Event triggered when an device becomes unavailable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceConnectionEvent onDeviceUnavailable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.DeviceConnectionEvent.html">DeviceConnectionEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onGlobalStatusEvent" data-uid="NextMind.NeuroManager.onGlobalStatusEvent">onGlobalStatusEvent</h4>
+  <div class="markdown level1 summary"><p>Event triggered when there is an error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalStatusEvent onGlobalStatusEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.GlobalStatusEvent.html">GlobalStatusEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onScanningStarted" data-uid="NextMind.NeuroManager.onScanningStarted">onScanningStarted</h4>
+  <div class="markdown level1 summary"><p>Event triggered when a scan is started by the NeuroManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScanningEvent onScanningStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.ScanningEvent.html">ScanningEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_onScanningStopped" data-uid="NextMind.NeuroManager.onScanningStopped">onScanningStopped</h4>
+  <div class="markdown level1 summary"><p>Event triggered when a scan is stopped by the NeuroManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScanningEvent onScanningStopped</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Events.ScanningEvent.html">ScanningEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="NextMind_NeuroManager_trackingCamera" data-uid="NextMind.NeuroManager.trackingCamera">trackingCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera trackingCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="NextMind_NeuroManager_AdditionalTrackingCameras_" data-uid="NextMind.NeuroManager.AdditionalTrackingCameras*"></a>
+  <h4 id="NextMind_NeuroManager_AdditionalTrackingCameras" data-uid="NextMind.NeuroManager.AdditionalTrackingCameras">AdditionalTrackingCameras</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera[] AdditionalTrackingCameras { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_AttemptReconnect_" data-uid="NextMind.NeuroManager.AttemptReconnect*"></a>
+  <h4 id="NextMind_NeuroManager_AttemptReconnect" data-uid="NextMind.NeuroManager.AttemptReconnect">AttemptReconnect</h4>
+  <div class="markdown level1 summary"><p>Should the <a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a> automatically start a new connection if the connected <a class="xref" href="NextMind.Devices.Device.html">Device</a> is lost?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttemptReconnect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_AutoConnect_" data-uid="NextMind.NeuroManager.AutoConnect*"></a>
+  <h4 id="NextMind_NeuroManager_AutoConnect" data-uid="NextMind.NeuroManager.AutoConnect">AutoConnect</h4>
+  <div class="markdown level1 summary"><p>Should the <a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a> attempt to connect to the first found <a class="xref" href="NextMind.Devices.Device.html">Device</a>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoConnect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_AvailableDevices_" data-uid="NextMind.NeuroManager.AvailableDevices*"></a>
+  <h4 id="NextMind_NeuroManager_AvailableDevices" data-uid="NextMind.NeuroManager.AvailableDevices">AvailableDevices</h4>
+  <div class="markdown level1 summary"><p>All available, not connected <a class="xref" href="NextMind.Devices.Device.html">Device</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Device&gt; AvailableDevices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="NextMind.Devices.Device.html">Device</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_ConnectedDevices_" data-uid="NextMind.NeuroManager.ConnectedDevices*"></a>
+  <h4 id="NextMind_NeuroManager_ConnectedDevices" data-uid="NextMind.NeuroManager.ConnectedDevices">ConnectedDevices</h4>
+  <div class="markdown level1 summary"><p>All currently connected <a class="xref" href="NextMind.Devices.Device.html">Device</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Device&gt; ConnectedDevices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="NextMind.Devices.Device.html">Device</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_Devices_" data-uid="NextMind.NeuroManager.Devices*"></a>
+  <h4 id="NextMind_NeuroManager_Devices" data-uid="NextMind.NeuroManager.Devices">Devices</h4>
+  <div class="markdown level1 summary"><p>The list of all the Devices known by the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Device&gt; Devices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="NextMind.Devices.Device.html">Device</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_Instance_" data-uid="NextMind.NeuroManager.Instance*"></a>
+  <h4 id="NextMind_NeuroManager_Instance" data-uid="NextMind.NeuroManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NeuroManager Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_IsConnectingToDevice_" data-uid="NextMind.NeuroManager.IsConnectingToDevice*"></a>
+  <h4 id="NextMind_NeuroManager_IsConnectingToDevice" data-uid="NextMind.NeuroManager.IsConnectingToDevice">IsConnectingToDevice</h4>
+  <div class="markdown level1 summary"><p>Is the <a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a> currently trying to connect to a <a class="xref" href="NextMind.Devices.Device.html">Device</a>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnectingToDevice { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_IsScanning_" data-uid="NextMind.NeuroManager.IsScanning*"></a>
+  <h4 id="NextMind_NeuroManager_IsScanning" data-uid="NextMind.NeuroManager.IsScanning">IsScanning</h4>
+  <div class="markdown level1 summary"><p>Is the system currently looking for available <a class="xref" href="NextMind.Devices.Device.html">Device</a>s?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScanning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_MaxNumberOfNeuroTags_" data-uid="NextMind.NeuroManager.MaxNumberOfNeuroTags*"></a>
+  <h4 id="NextMind_NeuroManager_MaxNumberOfNeuroTags" data-uid="NextMind.NeuroManager.MaxNumberOfNeuroTags">MaxNumberOfNeuroTags</h4>
+  <div class="markdown level1 summary"><p>Maximum number of targets simultaneously active on the screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint MaxNumberOfNeuroTags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>A value between 0 and 10.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_RegisteredNeuroTags_" data-uid="NextMind.NeuroManager.RegisteredNeuroTags*"></a>
+  <h4 id="NextMind_NeuroManager_RegisteredNeuroTags" data-uid="NextMind.NeuroManager.RegisteredNeuroTags">RegisteredNeuroTags</h4>
+  <div class="markdown level1 summary"><p>All currently registered (i.e. active and know by the system) <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;NeuroTag&gt; RegisteredNeuroTags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_ScanningBehaviour_" data-uid="NextMind.NeuroManager.ScanningBehaviour*"></a>
+  <h4 id="NextMind_NeuroManager_ScanningBehaviour" data-uid="NextMind.NeuroManager.ScanningBehaviour">ScanningBehaviour</h4>
+  <div class="markdown level1 summary"><p>Set how this <a class="xref" href="NextMind.NeuroManager.html">NeuroManager</a> should handle looking for a <a class="xref" href="NextMind.Devices.Device.html">Device</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NeuroManager.ScanBehaviour ScanningBehaviour { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.NeuroManager.ScanBehaviour.html">NeuroManager.ScanBehaviour</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_SimulateDevice_" data-uid="NextMind.NeuroManager.SimulateDevice*"></a>
+  <h4 id="NextMind_NeuroManager_SimulateDevice" data-uid="NextMind.NeuroManager.SimulateDevice">SimulateDevice</h4>
+  <div class="markdown level1 summary"><p>Should we use a fake NextMind device implementation?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SimulateDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the system relies on fake devices, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_StimulationEnabled_" data-uid="NextMind.NeuroManager.StimulationEnabled*"></a>
+  <h4 id="NextMind_NeuroManager_StimulationEnabled" data-uid="NextMind.NeuroManager.StimulationEnabled">StimulationEnabled</h4>
+  <div class="markdown level1 summary"><p>Does the NeuroManager applies stimulation values to NeuroTags?
+If this is set to <code>false</code>, the <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a>s will be considered as inactive (see <a class="xref" href="NextMind.NeuroTags.NeuroTag.html#NextMind_NeuroTags_NeuroTag_IsActive">IsActive</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StimulationEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_NeuroManager_StimulationEnabled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used internally to disable stimulation during critical phases of the calibration process. You can use it safely outside the calibration process though.</p>
+</div>
+  <a id="NextMind_NeuroManager_TrackingCamera_" data-uid="NextMind.NeuroManager.TrackingCamera*"></a>
+  <h4 id="NextMind_NeuroManager_TrackingCamera" data-uid="NextMind.NeuroManager.TrackingCamera">TrackingCamera</h4>
+  <div class="markdown level1 summary"><p>Property accessing the current tracking camera.</p>
+<p>This is the camera used to determine if a <a class="xref" href="NextMind.NeuroTags.NeuroTag.html">NeuroTag</a> has to be taken into account by the system regarding its position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera TrackingCamera { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NextMind_NeuroManager_TrackingCamera_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the user did not referenced it in the editor, <code>Camera.main</code> will be used.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="NextMind_NeuroManager_ConnectDevice_" data-uid="NextMind.NeuroManager.ConnectDevice*"></a>
+  <h4 id="NextMind_NeuroManager_ConnectDevice_NextMind_Devices_Device_System_Boolean_System_Boolean_System_String_" data-uid="NextMind.NeuroManager.ConnectDevice(NextMind.Devices.Device,System.Boolean,System.Boolean,System.String)">ConnectDevice(Device, Boolean, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Request that the <code data-dev-comment-type="paramref" class="paramref">device</code> be connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConnectDevice(Device device, bool attemptReconnect = true, bool filterPaired = true, string userName = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Devices.Device.html">Device</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device to which the system should connect.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">attemptReconnect</span></td>
+        <td><p>Attempt reconnect device if connection error</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">filterPaired</span></td>
+        <td><p>Filter paired devices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The username linked to this device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the request was successful, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_DisconnectDevice_" data-uid="NextMind.NeuroManager.DisconnectDevice*"></a>
+  <h4 id="NextMind_NeuroManager_DisconnectDevice_NextMind_Devices_Device_" data-uid="NextMind.NeuroManager.DisconnectDevice(NextMind.Devices.Device)">DisconnectDevice(Device)</h4>
+  <div class="markdown level1 summary"><p>Request that the <code data-dev-comment-type="paramref" class="paramref">device</code> be disconnected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisconnectDevice(Device device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NextMind.Devices.Device.html">Device</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device the system should disconnect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the request was successful, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_GetConfigurationFromFile_" data-uid="NextMind.NeuroManager.GetConfigurationFromFile*"></a>
+  <h4 id="NextMind_NeuroManager_GetConfigurationFromFile" data-uid="NextMind.NeuroManager.GetConfigurationFromFile">GetConfigurationFromFile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetConfigurationFromFile()</code></pre>
+  </div>
+  <a id="NextMind_NeuroManager_IsReady_" data-uid="NextMind.NeuroManager.IsReady*"></a>
+  <h4 id="NextMind_NeuroManager_IsReady" data-uid="NextMind.NeuroManager.IsReady">IsReady()</h4>
+  <div class="markdown level1 summary"><p>Is the system up and running?
+Ready means that at least one device is connected, and all connected devices are in a ready/decoding state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the system is ready, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_StartScanning_" data-uid="NextMind.NeuroManager.StartScanning*"></a>
+  <h4 id="NextMind_NeuroManager_StartScanning" data-uid="NextMind.NeuroManager.StartScanning">StartScanning()</h4>
+  <div class="markdown level1 summary"><p>Request that the system start discovering new <a class="xref" href="NextMind.Devices.Device.html">Device</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartScanning()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the request was successful, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="NextMind_NeuroManager_StopScanning_" data-uid="NextMind.NeuroManager.StopScanning*"></a>
+  <h4 id="NextMind_NeuroManager_StopScanning" data-uid="NextMind.NeuroManager.StopScanning">StopScanning()</h4>
+  <div class="markdown level1 summary"><p>Request that the system stop discovering new <a class="xref" href="NextMind.Devices.Device.html">Device</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopScanning()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the request was successful, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nmfooter"> </div>    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </div></body>
+</html>
